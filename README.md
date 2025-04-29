@@ -55,7 +55,7 @@ The DarkSide Hacker Group, likely Russian or Eastern European, operates as a for
 ### YARA Rule Creation
 A YARA rule was created to detect DarkSide ransomware based on its binary patterns:
 
-**_rule DarkSide_Ransomware {
+_**rule DarkSide_Ransomware {
    
     meta:
     
@@ -77,8 +77,7 @@ A YARA rule was created to detect DarkSide ransomware based on its binary patter
     
         uint16(0) == 0x5A4D and 2 of ($s*)
 
-}
-_**
+}**_
 
 **Tested**: Rule successfully flagged the malicious hash in a lab environment.
 
