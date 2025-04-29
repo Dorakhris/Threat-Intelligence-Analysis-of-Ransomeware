@@ -56,16 +56,27 @@ The DarkSide Hacker Group, likely Russian or Eastern European, operates as a for
 A YARA rule was created to detect DarkSide ransomware based on its binary patterns:
 
 **_rule DarkSide_Ransomware {
+   
     meta:
+    
         description = "Detects DarkSide ransomware based on binary patterns"
+        
         author = "Dorathy Christopher"
+        
         date = "2025-03-26"
+    
     strings:
+    
         $s1 = "DarkSide" ascii
+        
         $s2 = ".darkside" ascii
+        
         $s3 = "README.darkside.txt" ascii
+    
     condition:
+    
         uint16(0) == 0x5A4D and 2 of ($s*)
+
 }
 _**
 
