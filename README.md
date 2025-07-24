@@ -51,9 +51,9 @@ rule DarkSide_Ransomware_Detector
         reference_hash = "156335b95ba216456f1ac0894b7b9d6ad95404ac7df447940f21646ca0090673"
 
     strings:
-        $s1 = "DarkSide" ascii wide
-        $s2 = ".darkside" ascii wide
-        $s3 = "README.darkside.txt" ascii wide
+        $s1 = "DarkSide" 
+        $s2 = ".darkside" 
+        $s3 = "README.darkside.txt" 
         $s4 = { 57 65 6c 63 6f 6d 65 20 74 6f 20 74 68 65 20 64 61 72 6b 20 73 69 64 65 } // "Welcome to the dark side"
 
     condition:
@@ -64,7 +64,7 @@ rule DarkSide_Ransomware_Detector
 
 ---
 
-## Mitigation & GRC Alignment
+## Mitigation
 The following strategic recommendations are designed to mitigate the risks posed by DarkSide and similar threats. Each recommendation is aligned with established security frameworks to bridge the gap between technical controls and compliance requirements.
 
 | Recommendation | Business Impact | Framework Alignment |
