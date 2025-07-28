@@ -59,7 +59,7 @@ The investigation produced a detailed profile of a sophisticated and organized c
 | **Impact** | Data Encrypted for Impact (T1486) | The final stage, where files are encrypted (Salsa20/ChaCha20) and the ransom note is dropped. |
 
 
-## Screenshots & Logs
+##  Logs
 Below is the YARA rule I developed for detecting DarkSide ransomware samples. It focuses on unique strings found in the malware's code and its ransom notes.
 
 *YARA Rule for Detection:*
