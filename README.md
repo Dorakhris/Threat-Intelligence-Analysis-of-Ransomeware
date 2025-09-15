@@ -1,5 +1,4 @@
-# Project Title
-Threat Intelligence Profile: A Deep-Dive on the DarkSide Ransomware Group
+# Threat Intelligence Profile: A Deep-Dive on the DarkSide Ransomware Group
 
 
 ## Case Summary
